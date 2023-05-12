@@ -1,0 +1,42 @@
+:root{
+    --bg-primary: #272742;
+    --bg-a:#f5f8fc;
+    --bg-b:#f7c073;
+    --bg-c:#c2c4ca;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--bg-c);
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100vh 70vh 10vh;
+        row-gap: 5px;
+        column-gap: 5px;
+
+
+}
+.item-1{
+    background: var(--bg-primary);
+    grid-area: 1;
+
+}
+
+.item-2{
+    background:var(--bg-b);
+    grid-area: 1;
+}
+
+.item-3{
+    background: var(--bg-a);
+
+}
